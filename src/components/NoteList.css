@@ -1,0 +1,133 @@
+.note-list {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.note-list-empty {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: 48px 24px;
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+
+.empty-icon {
+  color: var(--color-border);
+  margin-bottom: 12px;
+}
+
+.empty-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.empty-hint {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  margin-top: 4px;
+  opacity: 0.7;
+}
+
+.note-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.note-list-scroll {
+  overflow-x: auto;
+}
+
+.note-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.note-table th {
+  text-align: left;
+  padding: 10px 8px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid var(--color-border);
+  white-space: nowrap;
+}
+
+.note-table td {
+  padding: 12px 8px;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: middle;
+}
+
+.note-table tr:last-child td {
+  border-bottom: none;
+}
+
+.note-table tr:hover td {
+  background: rgba(108, 99, 255, 0.03);
+}
+
+.note-index {
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  width: 30px;
+  text-align: center;
+}
+
+.grade-cell {
+  font-weight: 700;
+}
+
+.grade-high { color: var(--color-success); }
+.grade-mid { color: var(--color-warning); }
+.grade-low { color: var(--color-danger); }
+
+.contribution-cell {
+  color: var(--color-text-secondary);
+  font-size: 0.8rem;
+}
+
+.btn-delete {
+  background: transparent;
+  color: var(--color-text-secondary);
+  padding: 6px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  transition: all 0.2s;
+}
+
+.btn-delete:hover {
+  opacity: 1;
+  background: rgba(225, 112, 85, 0.1);
+  color: var(--color-danger);
+}
+
+@media (max-width: 480px) {
+  .note-table th,
+  .note-table td {
+    padding: 8px 6px;
+    font-size: 0.8rem;
+  }
+
+  .note-name-cell {
+    max-width: 80px;
+  }
+}

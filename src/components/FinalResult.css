@@ -1,0 +1,122 @@
+.final-result {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+
+.final-with-exam {
+  border: 2px solid var(--color-primary-light);
+}
+
+.final-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.final-badge {
+  display: inline-flex;
+  background: var(--color-primary);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.final-status {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.final-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.final-grade {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.final-body {
+  margin-top: 8px;
+}
+
+.final-breakdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.breakdown-item {
+  text-align: center;
+}
+
+.breakdown-label {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-bottom: 2px;
+  white-space: nowrap;
+}
+
+.breakdown-value {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.breakdown-plus,
+.breakdown-equals {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  margin-top: 16px;
+}
+
+.final-grade-big {
+  font-size: 1.75rem !important;
+}
+
+.breakdown-total {
+  padding: 8px 16px;
+  background: rgba(108, 99, 255, 0.08);
+  border-radius: var(--radius-sm);
+}
+
+@media (max-width: 480px) {
+  .final-breakdown {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .breakdown-plus,
+  .breakdown-equals {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+
+  .final-grade {
+    font-size: 2rem;
+  }
+}
